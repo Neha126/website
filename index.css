@@ -1,0 +1,53 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+nav{
+    line-height: 70px;
+    background: gray;
+    padding: 0 80px;
+    box-shadow: 0px;
+}
+nav .container{
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .container h2{
+    font-size: 1.7em;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: italic;
+    color: white;
+}
+nav .container .nav-items{
+    display: flex;
+    text-decoration: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+nav .container .nav-items li{
+    list-style: none;
+}
+nav .container .nav-items li a{
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+}
+nav .container .nav-items li a:hover{
+    color: cornflowerblue;
+}
+body{
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    background-image: url('https://image.shutterstock.com/image-illustration/3d-illustration-musical-notes-signs-260nw-761313844.jpg');
+    background-size:cover ;
+    background-repeat: no-repeat;
+}
