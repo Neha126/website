@@ -1,53 +1,104 @@
-*{
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
-    font-family: sans-serif;
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
-nav{
-    line-height: 70px;
-    background: gray;
-    padding: 0 80px;
-    box-shadow: 0px;
+nav {
+  line-height: 70px;
+  background: gray;
+  padding: 0 80px;
+  box-shadow: 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
-nav .container{
-    display: flex;
-    text-decoration: none;
-    justify-content: space-between;
-    align-items: center;
+nav .container {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+  align-items: center;
 }
-nav .container h2{
-    font-size: 1.7em;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-style: italic;
-    color: white;
+nav .container h2 {
+  font-size: 1.7em;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: italic;
+  color: white;
 }
-nav .container .nav-items{
-    display: flex;
-    text-decoration: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 40%;
+nav .container .nav-items {
+  display: flex;
+  text-decoration: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
 }
-nav .container .nav-items li{
-    list-style: none;
+nav .container .nav-items li {
+  list-style: none;
 }
-nav .container .nav-items li a{
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: 500;
-    color: white;
-    text-transform: uppercase;
+nav .container .nav-items li a {
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
 }
-nav .container .nav-items li a:hover{
-    color: cornflowerblue;
+nav .container .nav-items li a:hover {
+  color: cornflowerblue;
 }
-body{
-    /* position: absolute;
+body {
+  /* position: absolute;
     top: 0;
     left: 0; */
-    background-image: url('https://image.shutterstock.com/image-illustration/3d-illustration-musical-notes-signs-260nw-761313844.jpg');
-    background-size:cover ;
-    background-repeat: no-repeat;
+  background-image: url("https://image.shutterstock.com/image-illustration/3d-illustration-musical-notes-signs-260nw-761313844.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.pic {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 5rem;
+}
+.item {
+  /* height: 300px; */
+  width: 60%;
+  margin-bottom: 8px;
+  border-radius: 0.3rem;
+  box-shadow: 1px 2px 20px 1px lightgrey;
+  background: white;
+}
+.first {
+  display: flex;
+  /* align-items: center; */
+  /* flex-direction: column; */
+}
+
+.flex {
+  display: flex;
+}
+.row {
+  flex-direction: row;
+}
+.col {
+  flex-direction: column;
+  position: relative;
+  top: 5px;
+  left: 30px;
+  justify-content: space-evenly;
+}
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.btn:hover {
+  background-color: RoyalBlue;
 }
